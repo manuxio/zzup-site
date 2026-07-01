@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://privacy.zzup.net/sitemap.xml
+Sitemap: https://zzup.net/sitemap.xml

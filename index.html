@@ -1147,5 +1147,27 @@ html.js-anim .reveal.in{transform:none}
   })();
 })();
 </script>
+<!-- CTA / lead tracking (GA4) -->
+<script>
+(function(){
+  function loc(el){
+    var s = el.closest("section[id], footer, header");
+    if (!s) return "unknown";
+    return s.id || s.tagName.toLowerCase();
+  }
+  document.addEventListener("click", function(e){
+    var a = e.target.closest("a");
+    if (!a || typeof gtag !== "function") return;
+    var href = a.getAttribute("href") || "";
+    if (href.indexOf("t.me/") !== -1){
+      // Real conversion: opening Telegram to make contact.
+      gtag("event", "generate_lead", { method: "telegram", location: loc(a) });
+    } else if (a.classList.contains("btn-primary")){
+      // Soft funnel step: a "Start a free week" button that scrolls to pricing.
+      gtag("event", "cta_click", { cta: "start_free_week", location: loc(a) });
+    }
+  }, true);
+})();
+</script>
 </body>
 </html>

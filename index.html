@@ -555,6 +555,21 @@ html.js-anim .reveal.in{transform:none}
   .hero h1{font-size:30px}
   .lang-wrap .lang-globe{display:none}
 }
+
+/* comparison table */
+.cmp-wrap{margin-top:32px;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.02)}
+.cmp{width:100%;border-collapse:collapse;min-width:660px;font-size:14.5px}
+.cmp th,.cmp td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid rgba(255,255,255,.07)}
+.cmp thead th{font-size:13px;font-weight:700;color:#eef0f4;border-bottom:1px solid rgba(255,255,255,.16)}
+.cmp tbody th{font-weight:600;color:#c7ccd6;width:24%}
+.cmp td{color:var(--muted)}
+.cmp .cmp-us{background:var(--ember-soft)}
+.cmp thead th.cmp-us{color:var(--ember);font-size:16px}
+.cmp tbody td.cmp-us{color:#ffdbe8;font-weight:600}
+.cmp th.cmp-us,.cmp td.cmp-us{border-left:1px solid rgba(255,45,111,.35);border-right:1px solid rgba(255,45,111,.35)}
+.cmp thead th.cmp-us{border-top:1px solid rgba(255,45,111,.35)}
+.cmp tbody tr:last-child td.cmp-us{border-bottom:1px solid rgba(255,45,111,.35)}
+.cmp-note{margin-top:20px;color:var(--muted);font-size:15px;max-width:72ch}
 </style>
 </head>
 <body>
@@ -844,6 +859,68 @@ html.js-anim .reveal.in{transform:none}
     </div>
   </section>
 
+  <!-- COMPARE -->
+  <section id="compare" aria-labelledby="compare-h2">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span data-i18n="cmp_eyebrow" class="eyebrow">A category of its own</span>
+        <h2 data-i18n="cmp_h2" id="compare-h2">Not a better messenger. A different thing entirely.</h2>
+        <p data-i18n="cmp_p">We don't compete with messaging apps — we do the one thing none of them do. Each pair is built by hand for the two of you, which is why it's more solid, and why it costs more.</p>
+      </div>
+      <div class="cmp-wrap reveal">
+        <table class="cmp">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Signal · Telegram · WhatsApp</th>
+              <th data-i18n="cmp_col_disg">Disguise apps (News Plume, Secret Chat…)</th>
+              <th class="cmp-us">zzup</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row" data-i18n="cmp_r1_l">What it hides</th>
+            <td data-i18n="cmp_r1_a">The message content</td>
+            <td data-i18n="cmp_r1_b">The chat, behind a dedicated app</td>
+            <td class="cmp-us" data-i18n="cmp_r1_z">That a conversation exists at all</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="cmp_r2_l">What someone sees on your phone</th>
+            <td data-i18n="cmp_r2_a">A messaging app</td>
+            <td data-i18n="cmp_r2_b">An unusual app — once known, a giveaway</td>
+            <td class="cmp-us" data-i18n="cmp_r2_z">An ordinary app: nothing out of place</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="cmp_r3_l">An app to recognize or look up?</th>
+            <td data-i18n="cmp_r3_a">Yes</td>
+            <td data-i18n="cmp_r3_b">Yes — one, same for everyone, googlable</td>
+            <td class="cmp-us" data-i18n="cmp_r3_z">No: an identical copy of a real app, made for you</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="cmp_r6_l">Look the app up in the store?</th>
+            <td data-i18n="cmp_r6_a">You find a messaging app — the search confirms it</td>
+            <td data-i18n="cmp_r6_b">You find the app — its page literally says it's for secret affairs. Already caught!</td>
+            <td class="cmp-us" data-i18n="cmp_r6_z">You find the genuine app — no chat, and nothing public links it to zzup</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="cmp_r4_l">Do you have to delete chats?</th>
+            <td data-i18n="cmp_r4_a">Yes, constantly</td>
+            <td data-i18n="cmp_r4_b">Sometimes</td>
+            <td class="cmp-us" data-i18n="cmp_r4_z">No: hidden by default, auto-deletes</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="cmp_r5_l">Notifications</th>
+            <td data-i18n="cmp_r5_a">Announce a new message</td>
+            <td data-i18n="cmp_r5_b">Varies</td>
+            <td class="cmp-us" data-i18n="cmp_r5_z">Look like the cover app's own</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cmp-note reveal" data-i18n="cmp_note">Others protect the message, or hide the chat behind an app you can still recognize. We make the very existence of the conversation invisible — no one else builds this.</p>
+    </div>
+  </section>
+
   <!-- HOW IT WORKS -->
   <section id="how" aria-labelledby="how-h2">
     <div class="wrap">
@@ -1050,6 +1127,18 @@ html.js-anim .reveal.in{transform:none}
    it:{chat_name:`Solo noi`,chat_sub:`crittografia end-to-end<br>si cancella tra 1 h`,chat_m1:`arrivato a casa — mi manchi già`,chat_m2:`anch'io. non vedo l'ora che arrivi venerdì 🙂`,chat_photo:`foto · crittografata`,chat_doc:`plans.pdf · crittografato`,chat_input:`Messaggio…`}
   };
   Object.keys(CHAT_I18N).forEach(function(l){ if(I18N[l]){ var s=CHAT_I18N[l]; for(var k in s){ I18N[l][k]=s[k]; } } });
+  // Comparison-table strings (merged into the main dictionary; English from the DOM).
+  var CMP_I18N={
+   it:{cmp_eyebrow:`Una categoria a parte`,cmp_h2:`Non una chat migliore. Una cosa completamente diversa.`,cmp_p:`Non competiamo con le app di messaggistica: facciamo l'unica cosa che nessuna di loro fa. Ogni coppia è costruita a mano su misura per voi due — per questo è più solida, e per questo costa di più.`,cmp_col_disg:`App camuffo (News Plume, Secret Chat…)`,cmp_r1_l:`Cosa nasconde`,cmp_r1_a:`Il contenuto del messaggio`,cmp_r1_b:`La chat, dietro un'app dedicata`,cmp_r1_z:`Che esista una conversazione`,cmp_r2_l:`Cosa vede chi prende il telefono`,cmp_r2_a:`Un'app di messaggistica`,cmp_r2_b:`Un'app insolita — una volta nota, un indizio`,cmp_r2_z:`Un'app comune: niente fuori posto`,cmp_r3_l:`C'è un'app da riconoscere o cercare?`,cmp_r3_a:`Sì`,cmp_r3_b:`Sì — una sola, uguale per tutti, googlabile`,cmp_r3_z:`No: la copia identica di un'app vera, su misura per voi`,cmp_r4_l:`Devi cancellare le chat?`,cmp_r4_a:`Sì, di continuo`,cmp_r4_b:`A volte`,cmp_r4_z:`No: nascosta di default, si auto-cancella`,cmp_r5_l:`Le notifiche`,cmp_r5_a:`Annunciano un nuovo messaggio`,cmp_r5_b:`Variabili`,cmp_r5_z:`Sembrano dell'app di copertura`,cmp_note:`Gli altri proteggono il messaggio, o nascondono la chat dietro un'app che comunque si riconosce. Noi rendiamo invisibile il fatto stesso che ci sia una conversazione — nessun altro lo fa.`,cmp_r6_l:`Cerchi l'app nello store?`,cmp_r6_a:`Trovi un'app di messaggistica — la ricerca lo conferma`,cmp_r6_b:`Trovi l'app con scritto che è per relazioni segrete! Sei stato già scoperto!`,cmp_r6_z:`Trovi l'app vera — nessuna chat, e niente di pubblico la collega a zzup`},
+   es:{cmp_eyebrow:`Una categoría aparte`,cmp_h2:`No un mensajero mejor. Algo completamente distinto.`,cmp_p:`No competimos con las apps de mensajería: hacemos lo único que ninguna de ellas hace. Cada par se construye a mano para vosotros dos — por eso es más sólido, y por eso cuesta más.`,cmp_col_disg:`Apps camufladas (News Plume, Secret Chat…)`,cmp_r1_l:`Qué oculta`,cmp_r1_a:`El contenido del mensaje`,cmp_r1_b:`El chat, tras una app dedicada`,cmp_r1_z:`Que exista una conversación`,cmp_r2_l:`Qué ve quien coge tu teléfono`,cmp_r2_a:`Una app de mensajería`,cmp_r2_b:`Una app peculiar — una vez conocida, delata`,cmp_r2_z:`Una app corriente: nada fuera de lugar`,cmp_r3_l:`¿Hay una app que reconocer o buscar?`,cmp_r3_a:`Sí`,cmp_r3_b:`Sí — una sola, igual para todos, googleable`,cmp_r3_z:`No: una copia idéntica de una app real, hecha para vosotros`,cmp_r4_l:`¿Tienes que borrar los chats?`,cmp_r4_a:`Sí, constantemente`,cmp_r4_b:`A veces`,cmp_r4_z:`No: oculto por defecto, se autodestruye`,cmp_r5_l:`Las notificaciones`,cmp_r5_a:`Anuncian un mensaje nuevo`,cmp_r5_b:`Variables`,cmp_r5_z:`Parecen de la app de tapadera`,cmp_note:`Los demás protegen el mensaje, u ocultan el chat tras una app que aun así se reconoce. Nosotros hacemos invisible el hecho mismo de que exista una conversación — nadie más lo hace.`,cmp_r6_l:`¿Buscas la app en la tienda?`,cmp_r6_a:`Encuentras una app de mensajería — la búsqueda lo confirma`,cmp_r6_b:`Encuentras la app que pone que es para líos secretos. ¡Ya te han pillado!`,cmp_r6_z:`Encuentras la app auténtica — sin chat, y nada público la vincula a zzup`},
+   fr:{cmp_eyebrow:`Une catégorie à part`,cmp_h2:`Pas une meilleure messagerie. Quelque chose de radicalement différent.`,cmp_p:`Nous ne concurrençons pas les messageries : nous faisons la seule chose qu'aucune ne fait. Chaque paire est fabriquée à la main rien que pour vous deux — c'est pourquoi elle est plus solide, et pourquoi elle coûte plus cher.`,cmp_col_disg:`Applis déguisées (News Plume, Secret Chat…)`,cmp_r1_l:`Ce que ça cache`,cmp_r1_a:`Le contenu du message`,cmp_r1_b:`Le chat, derrière une appli dédiée`,cmp_r1_z:`Qu'une conversation existe`,cmp_r2_l:`Ce que voit celui qui prend votre téléphone`,cmp_r2_a:`Une appli de messagerie`,cmp_r2_b:`Une appli inhabituelle — une fois connue, elle trahit`,cmp_r2_z:`Une appli ordinaire : rien qui détonne`,cmp_r3_l:`Une appli à reconnaître ou rechercher ?`,cmp_r3_a:`Oui`,cmp_r3_b:`Oui — une seule, la même pour tous, trouvable sur Google`,cmp_r3_z:`Non : une copie identique d'une vraie appli, faite pour vous`,cmp_r4_l:`Faut-il supprimer les conversations ?`,cmp_r4_a:`Oui, en permanence`,cmp_r4_b:`Parfois`,cmp_r4_z:`Non : caché par défaut, s'efface tout seul`,cmp_r5_l:`Les notifications`,cmp_r5_a:`Annoncent un nouveau message`,cmp_r5_b:`Variables`,cmp_r5_z:`Ressemblent à celles de l'appli de couverture`,cmp_note:`Les autres protègent le message, ou cachent le chat derrière une appli qui se reconnaît quand même. Nous rendons invisible l'existence même de la conversation — personne d'autre ne le fait.`,cmp_r6_l:`Vous cherchez l'appli dans le store ?`,cmp_r6_a:`Vous trouvez une messagerie — la recherche le confirme`,cmp_r6_b:`Vous trouvez l'appli qui indique qu'elle est pour les liaisons secrètes. Déjà démasqué !`,cmp_r6_z:`Vous trouvez la vraie appli — aucun chat, et rien de public ne la relie à zzup`},
+   de:{cmp_eyebrow:`Eine eigene Kategorie`,cmp_h2:`Kein besserer Messenger. Etwas völlig anderes.`,cmp_p:`Wir konkurrieren nicht mit Messaging-Apps — wir tun das Eine, das keine von ihnen tut. Jedes Paar wird von Hand für euch beide gebaut — deshalb ist es solider, und deshalb kostet es mehr.`,cmp_col_disg:`Tarn-Apps (News Plume, Secret Chat…)`,cmp_r1_l:`Was es verbirgt`,cmp_r1_a:`Den Nachrichteninhalt`,cmp_r1_b:`Den Chat, hinter einer eigenen App`,cmp_r1_z:`Dass überhaupt ein Gespräch existiert`,cmp_r2_l:`Was jemand auf deinem Telefon sieht`,cmp_r2_a:`Eine Messaging-App`,cmp_r2_b:`Eine ungewöhnliche App — einmal bekannt, ein Verräter`,cmp_r2_z:`Eine gewöhnliche App: nichts fehl am Platz`,cmp_r3_l:`Eine App zum Erkennen oder Nachschlagen?`,cmp_r3_a:`Ja`,cmp_r3_b:`Ja — eine, für alle gleich, googelbar`,cmp_r3_z:`Nein: eine identische Kopie einer echten App, für euch gemacht`,cmp_r4_l:`Musst du Chats löschen?`,cmp_r4_a:`Ja, ständig`,cmp_r4_b:`Manchmal`,cmp_r4_z:`Nein: standardmäßig verborgen, löscht sich selbst`,cmp_r5_l:`Benachrichtigungen`,cmp_r5_a:`Kündigen eine neue Nachricht an`,cmp_r5_b:`Unterschiedlich`,cmp_r5_z:`Sehen aus wie die der Tarn-App`,cmp_note:`Die anderen schützen die Nachricht oder verstecken den Chat hinter einer App, die man trotzdem erkennt. Wir machen die bloße Existenz des Gesprächs unsichtbar — das baut sonst niemand.`,cmp_r6_l:`Die App im Store nachschlagen?`,cmp_r6_a:`Du findest eine Messaging-App — die Suche bestätigt es`,cmp_r6_b:`Du findest die App, auf der steht, dass sie für heimliche Affären ist. Schon aufgeflogen!`,cmp_r6_z:`Du findest die echte App — kein Chat, und nichts Öffentliches verbindet sie mit zzup`},
+   sv:{cmp_eyebrow:`En egen kategori`,cmp_h2:`Ingen bättre meddelandeapp. Något helt annat.`,cmp_p:`Vi konkurrerar inte med meddelandeappar — vi gör det enda som ingen av dem gör. Varje par byggs för hand åt er två — därför är det stabilare, och därför kostar det mer.`,cmp_col_disg:`Förklädda appar (News Plume, Secret Chat…)`,cmp_r1_l:`Vad den döljer`,cmp_r1_a:`Meddelandets innehåll`,cmp_r1_b:`Chatten, bakom en särskild app`,cmp_r1_z:`Att ett samtal alls finns`,cmp_r2_l:`Vad någon ser på din telefon`,cmp_r2_a:`En meddelandeapp`,cmp_r2_b:`En ovanlig app — när den väl är känd, en avslöjare`,cmp_r2_z:`En vanlig app: inget som sticker ut`,cmp_r3_l:`En app att känna igen eller söka upp?`,cmp_r3_a:`Ja`,cmp_r3_b:`Ja — en enda, samma för alla, googlingsbar`,cmp_r3_z:`Nej: en identisk kopia av en riktig app, gjord åt er`,cmp_r4_l:`Måste du radera chattar?`,cmp_r4_a:`Ja, hela tiden`,cmp_r4_b:`Ibland`,cmp_r4_z:`Nej: dold som standard, raderar sig själv`,cmp_r5_l:`Aviseringar`,cmp_r5_a:`Aviserar ett nytt meddelande`,cmp_r5_b:`Varierar`,cmp_r5_z:`Ser ut som täckmantel-appens egna`,cmp_note:`De andra skyddar meddelandet, eller gömmer chatten bakom en app som ändå går att känna igen. Vi gör själva existensen av samtalet osynlig — ingen annan bygger detta.`,cmp_r6_l:`Söker du upp appen i butiken?`,cmp_r6_a:`Du hittar en meddelandeapp — sökningen bekräftar det`,cmp_r6_b:`Du hittar appen där det står att den är för hemliga förhållanden. Redan avslöjad!`,cmp_r6_z:`Du hittar den äkta appen — ingen chatt, och inget offentligt kopplar den till zzup`},
+   ja:{cmp_eyebrow:`独立したカテゴリー`,cmp_h2:`より優れたメッセンジャーではありません。まったく別のものです。`,cmp_p:`私たちはメッセージアプリと競いません — どのアプリもやらない唯一のことをします。一対ずつ二人のために手作りするから、より堅牢で、だからこそ価格も高いのです。`,cmp_col_disg:`偽装アプリ（News Plume、Secret Chat…）`,cmp_r1_l:`何を隠すか`,cmp_r1_a:`メッセージの内容`,cmp_r1_b:`チャットを、専用アプリの裏に`,cmp_r1_z:`会話が存在すること自体`,cmp_r2_l:`端末を手にした人が見るもの`,cmp_r2_a:`メッセージアプリ`,cmp_r2_b:`見慣れないアプリ — 知られれば手がかりに`,cmp_r2_z:`ごく普通のアプリ：何ひとつ不自然でない`,cmp_r3_l:`見分けたり検索できるアプリがある？`,cmp_r3_a:`ある`,cmp_r3_b:`ある — 全員共通の一つ、検索可能`,cmp_r3_z:`ない：本物のアプリのまったく同じコピー、あなた方専用`,cmp_r4_l:`チャットを消す必要がある？`,cmp_r4_a:`はい、絶えず`,cmp_r4_b:`時々`,cmp_r4_z:`いいえ：既定で非表示、自動で消える`,cmp_r5_l:`通知`,cmp_r5_a:`新着メッセージを知らせる`,cmp_r5_b:`まちまち`,cmp_r5_z:`カバー用アプリ自身の通知に見える`,cmp_note:`他社はメッセージを守るか、認識できてしまうアプリの裏にチャットを隠すだけ。私たちは会話が存在すること自体を見えなくします — こんなものは他にありません。`,cmp_r6_l:`ストアでそのアプリを検索したら？`,cmp_r6_a:`メッセージアプリが出てくる — 検索で裏付けられる`,cmp_r6_b:`そのアプリの説明に「秘密の関係向け」と書いてある — もうバレています！`,cmp_r6_z:`本物のアプリが出てくる — チャットはなく、zzup と結びつく公開情報は一切ない`},
+   zh:{cmp_eyebrow:`自成一类`,cmp_h2:`不是更好的通讯工具，而是完全不同的东西。`,cmp_p:`我们不与通讯应用竞争——我们做的是它们都不做的那一件事。每一对都为你们俩手工打造，所以更稳固，也因此价格更高。`,cmp_col_disg:`伪装应用（News Plume、Secret Chat…）`,cmp_r1_l:`隐藏什么`,cmp_r1_a:`消息内容`,cmp_r1_b:`聊天，藏在一个专用应用后面`,cmp_r1_z:`对话存在这件事本身`,cmp_r2_l:`拿起你手机的人看到什么`,cmp_r2_a:`一个通讯应用`,cmp_r2_b:`一个不寻常的应用——一旦为人所知，就是破绽`,cmp_r2_z:`一个普通应用：没有任何突兀`,cmp_r3_l:`有可辨认或可搜索的应用吗？`,cmp_r3_a:`有`,cmp_r3_b:`有——同一个，人人相同，可被搜到`,cmp_r3_z:`没有：一个真实应用的一模一样的副本，为你们定制`,cmp_r4_l:`需要删除聊天记录吗？`,cmp_r4_a:`是，要不停地删`,cmp_r4_b:`有时`,cmp_r4_z:`不：默认隐藏，自动删除`,cmp_r5_l:`通知`,cmp_r5_a:`提示有新消息`,cmp_r5_b:`不一定`,cmp_r5_z:`看起来像伪装应用自己的通知`,cmp_note:`别人保护消息，或把聊天藏在一个仍能被认出的应用后面。我们让对话存在这件事本身变得不可见——没有别人做这个。`,cmp_r6_l:`在应用商店里搜这个应用？`,cmp_r6_a:`会搜到一个通讯应用——搜索反而坐实了它`,cmp_r6_b:`会搜到那个应用，页面上写着它是给秘密关系用的——你已经暴露了！`,cmp_r6_z:`会搜到那个真正的应用——没有聊天，也没有任何公开信息把它和 zzup 关联`},
+   ar:{cmp_eyebrow:`فئة قائمة بذاتها`,cmp_h2:`ليس تطبيق مراسلة أفضل، بل شيء مختلف تمامًا.`,cmp_p:`نحن لا ننافس تطبيقات المراسلة — بل نفعل الشيء الوحيد الذي لا يفعله أيٌّ منها. كل زوج يُصنع يدويًا لكما وحدكما — لذلك هو أمتن، ولذلك يكلّف أكثر.`,cmp_col_disg:`تطبيقات التمويه (News Plume، Secret Chat…)`,cmp_r1_l:`ماذا يُخفي`,cmp_r1_a:`محتوى الرسالة`,cmp_r1_b:`الدردشة، خلف تطبيق مخصّص`,cmp_r1_z:`وجود المحادثة أصلًا`,cmp_r2_l:`ما يراه من يمسك هاتفك`,cmp_r2_a:`تطبيق مراسلة`,cmp_r2_b:`تطبيق غير مألوف — متى عُرف صار دليلًا`,cmp_r2_z:`تطبيق عادي: لا شيء في غير محلّه`,cmp_r3_l:`هل هناك تطبيق يمكن تمييزه أو البحث عنه؟`,cmp_r3_a:`نعم`,cmp_r3_b:`نعم — واحد، هو نفسه للجميع، ويمكن العثور عليه في غوغل`,cmp_r3_z:`لا: نسخة طبق الأصل من تطبيق حقيقي، مصنوعة لكما`,cmp_r4_l:`هل عليك حذف الدردشات؟`,cmp_r4_a:`نعم، باستمرار`,cmp_r4_b:`أحيانًا`,cmp_r4_z:`لا: مخفية افتراضيًا وتُحذف تلقائيًا`,cmp_r5_l:`الإشعارات`,cmp_r5_a:`تُعلن عن رسالة جديدة`,cmp_r5_b:`متفاوتة`,cmp_r5_z:`تبدو وكأنها من تطبيق التمويه نفسه`,cmp_note:`الآخرون يحمون الرسالة، أو يُخفون الدردشة خلف تطبيق يبقى قابلًا للتمييز. نحن نجعل وجود المحادثة نفسه غير مرئي — لا أحد غيرنا يفعل هذا.`,cmp_r6_l:`تبحث عن التطبيق في المتجر؟`,cmp_r6_a:`تجد تطبيق مراسلة — والبحث يؤكّد ذلك`,cmp_r6_b:`تجد التطبيق مكتوبًا عليه أنه لعلاقات سرّية — لقد انكشفت بالفعل!`,cmp_r6_z:`تجد التطبيق الحقيقي — لا دردشة فيه، ولا شيء علنيّ يربطه بـ zzup`}
+  };
+  Object.keys(CMP_I18N).forEach(function(l){ if(I18N[l]){ var s=CMP_I18N[l]; for(var k in s){ I18N[l][k]=s[k]; } } });
   var currentLang="en";
   function cap(key){ var L=CAPS[currentLang]||CAPS.en; return (L&&L[key]!=null)?L[key]:CAPS.en[key]; }
   function applyLang(lang){

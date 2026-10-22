@@ -1,9 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zzup.net/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zzup.net/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zzup.net/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zzup.net/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zzup.net/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zzup.net/de/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zzup.net/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zzup.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zzup.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zzup.net/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zzup.net/"/>
+  </url>
+  <url>
+    <loc>https://zzup.net/it/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zzup.net/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zzup.net/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zzup.net/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zzup.net/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zzup.net/de/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zzup.net/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zzup.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zzup.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zzup.net/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zzup.net/"/>
+  </url>
+  <url>
+    <loc>https://zzup.net/es/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zzup.net/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zzup.net/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zzup.net/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zzup.net/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zzup.net/de/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zzup.net/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zzup.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zzup.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zzup.net/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zzup.net/"/>
+  </url>
+  <url>
+    <loc>https://zzup.net/fr/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zzup.net/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zzup.net/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zzup.net/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zzup.net/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zzup.net/de/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zzup.net/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zzup.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zzup.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zzup.net/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zzup.net/"/>
+  </url>
+  <url>
+    <loc>https://zzup.net/de/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zzup.net/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zzup.net/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zzup.net/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zzup.net/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zzup.net/de/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zzup.net/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zzup.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zzup.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zzup.net/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zzup.net/"/>
+  </url>
+  <url>
+    <loc>https://zzup.net/sv/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zzup.net/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zzup.net/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zzup.net/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zzup.net/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zzup.net/de/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zzup.net/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zzup.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zzup.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zzup.net/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zzup.net/"/>
+  </url>
+  <url>
+    <loc>https://zzup.net/ja/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zzup.net/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zzup.net/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zzup.net/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zzup.net/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zzup.net/de/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zzup.net/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zzup.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zzup.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zzup.net/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zzup.net/"/>
+  </url>
+  <url>
+    <loc>https://zzup.net/zh/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zzup.net/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zzup.net/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zzup.net/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zzup.net/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zzup.net/de/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zzup.net/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zzup.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zzup.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zzup.net/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zzup.net/"/>
+  </url>
+  <url>
+    <loc>https://zzup.net/ar/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zzup.net/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zzup.net/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zzup.net/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zzup.net/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zzup.net/de/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zzup.net/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zzup.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zzup.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zzup.net/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zzup.net/"/>
   </url>
 </urlset>

@@ -677,12 +677,12 @@ body::before{
   -webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat;
   animation:loveUp calc(var(--d) * 1.8) linear calc(var(--t) * 1.8) infinite;
 }
-.love-float i:nth-child(1){--x:4%;--s:30px;--d:13s;--t:0s}
-.love-float i:nth-child(2){--ico:var(--cuffs);--x:18%;--s:34px;--d:16s;--t:5s}
-.love-float i:nth-child(3){--ico:var(--lips);--x:40%;--s:28px;--d:14s;--t:9s}
-.love-float i:nth-child(4){--ico:var(--lock);--x:60%;--s:26px;--d:15s;--t:2s}
-.love-float i:nth-child(5){--ico:var(--heel);--x:80%;--s:36px;--d:17s;--t:7s}
-.love-float i:nth-child(6){--ico:var(--flame);--x:94%;--s:24px;--d:13s;--t:11s}
+.love-float i:nth-child(1){--y:14%;--x:4%;--s:30px;--d:13s;--t:0s}
+.love-float i:nth-child(2){--y:72%;--ico:var(--cuffs);--x:18%;--s:34px;--d:16s;--t:5s}
+.love-float i:nth-child(3){--y:30%;--ico:var(--lips);--x:40%;--s:28px;--d:14s;--t:9s}
+.love-float i:nth-child(4){--y:86%;--ico:var(--lock);--x:60%;--s:26px;--d:15s;--t:2s}
+.love-float i:nth-child(5){--y:22%;--ico:var(--heel);--x:80%;--s:36px;--d:17s;--t:7s}
+.love-float i:nth-child(6){--y:58%;--ico:var(--flame);--x:94%;--s:24px;--d:13s;--t:11s}
 @keyframes loveUp{
   0%{transform:translate(0,0) rotate(-12deg) scale(.8);opacity:0}
   10%{opacity:.85}
@@ -700,10 +700,11 @@ body::before{
   -webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat;
   animation:skyUp calc(var(--d) * 1.6) linear calc(var(--t) * 1.6) infinite;
 }
-.love-sky i:nth-child(1){--x:8%;--s:26px;--d:26s;--t:0s}
-.love-sky i:nth-child(2){--ico:var(--lips);--x:35%;--s:24px;--d:28s;--t:9s}
-.love-sky i:nth-child(3){--ico:var(--cuffs);--x:62%;--s:28px;--d:30s;--t:18s}
-.love-sky i:nth-child(4){--ico:var(--collar);--x:88%;--s:22px;--d:27s;--t:5s}
+.love-sky i:nth-child(1){--y:46%;--x:8%;--s:26px;--d:26s;--t:0s}
+.love-sky i:nth-child(2){--y:64%;--ico:var(--lips);--x:35%;--s:24px;--d:28s;--t:9s}
+.love-sky i:nth-child(3){--y:38%;--ico:var(--cuffs);--x:62%;--s:28px;--d:30s;--t:18s}
+.love-sky i:nth-child(4){--y:82%;--ico:var(--collar);--x:88%;--s:22px;--d:27s;--t:5s}
+@keyframes twinkle{0%,100%{opacity:.12}50%{opacity:.55}}
 @keyframes skyUp{
   0%{transform:translate(0,0) rotate(-10deg);opacity:0}
   10%{opacity:.42}
@@ -858,7 +859,8 @@ body::before{
 #pricing::before{left:15%;right:15%;top:0;bottom:0;background:radial-gradient(closest-side,rgba(255,45,111,.13),transparent)}
 
 @media (prefers-reduced-motion:reduce){
-  .love-float,.love-sky{display:none}
+  /* no drifting: the icons rest in place and just glow in and out */
+  .love-float i,.love-sky i{top:var(--y);bottom:auto;transform:rotate(-8deg);animation:twinkle 7s ease-in-out var(--t) infinite}
   .phone-stage .glow,.price-card::before,.btn-primary:hover::after,.big-heart,.eyebrow::before{animation:none}
   .phone-screen[data-scene="chat"] .chat-body .bubble:first-child::after{animation:none;transform:none}
   .card,.feat{transition:none!important}
